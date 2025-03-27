@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node src/server.ts",
     "build": "tsc -b",
-    "start": "node dist/server.js"
+    "start:docker": "pnpm exec prisma migrate dev && node dist/server.js"
   },
   "keywords": [],
   "author": "",
